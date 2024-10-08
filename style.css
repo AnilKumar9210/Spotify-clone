@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color: white;
 }
 *{
     margin: 0;
@@ -9,13 +10,11 @@ body {
 .Sec-A {
     width: 30vw;
     height: 800px;
-    border: 2px solid white;
 }
 
 .Sec-B{
     width: 68vw;
     height: 800px;
-    border: 2px solid white;
     margin-left: 10px;
     position: relative;
 }
@@ -64,4 +63,51 @@ body {
 .angles>img {
     filter: invert();
     
+}
+
+/* styling Section-A */
+
+.homeSec {
+    background-color: rgb(44, 40, 40);
+    height: 110px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.homeSec>li {
+    display: flex;
+    margin: 13px;
+    align-items: center;
+
+}
+.logo {
+    display: flex;
+    filter: invert(1);
+    align-items: center;
+}
+.logo>img {
+    height: 30px;
+}
+
+.logo>h1{
+    filter: invert();
+    margin-left: 5px;
+}
+.homeSec>li>img {
+    filter: invert();
+    height: 14px;
+    width: 14px;
+    margin: 3px;
+}
+
+.homeSec>li>h4 {
+    margin-left: 8px;
+}
+
+.homeSec>li>h4:hover {
+    cursor: pointer;
+}
+
+.homeSec>li>img:hover {
+    cursor: pointer;
 }
