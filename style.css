@@ -179,7 +179,7 @@ card > h1 {
   background: #555;
 }
 
-.seekBar {
+.audioTrack {
   width: 67%;
   height: 40px;
   background-color: #dcd9d9;
@@ -187,7 +187,7 @@ card > h1 {
   display: flex;
   position: absolute;
   justify-content: space-between;
-  padding: 6px;
+  padding: 8px;
   border-radius: 10px;
   align-items: center;
   position: fixed;
@@ -215,6 +215,20 @@ card > h1 {
   cursor: pointer;
 }
 
+.songName {
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+  align-content: center;
+}
+
+.time {
+  width: 80px;
+  height: 40px;
+  overflow: auto;
+  align-content: center;
+}
+
 .songList {
   height: 544px;
   width: 96%;
@@ -227,4 +241,9 @@ card > h1 {
 
 .m-10 {
   margin: 10px;
+}
+
+.seekBar {
+  width: 100%;
+  height: 200px;
 }

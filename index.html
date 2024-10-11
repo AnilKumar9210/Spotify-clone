@@ -26,13 +26,7 @@
             </ul>
 
             <ul class="songList">
-                <li>
-                    <img class="invert" src="Images/music.svg" alt="">
-                    <div class="name">
-                        Hai hello world how are you doing
-                    </div>
-                    <img class="invert" src="Images/play-button.svg" alt="">
-                </li>
+                
             </ul>
         </section>
         <section class="Sec-B">
@@ -67,16 +61,14 @@
                     </div>
                 </div>
             </div>
-            <div class="seekBar">
-                    <div class="songName">Hello Iam Anil_kumar</div>
+            <div class="audioTrack">
+                    <span class="songName"></span>
                     <div class="songBtns">
-                        <img src="Images/play-backwards.svg" alt="">
-                        <img src="Images/play-button.svg" alt="">
-                        <img src="Images/play-forwards.svg" alt="">
+                        <img class="previous" onclick="previousSong ()" src="Images/play-backwards.svg" alt="">
+                        <img class="playSong" onclick="playPauseMusic ()" src="Images/play-button.svg" alt="">
+                        <img class="next" onclick="playNextSong ()" src="Images/play-forwards.svg" alt="">
                     </div>
                     <div class="time">
-                        <span class="duration">00:00</span>
-                        <span class="currentTime">00:00</span>
                     </div>
             </div>
         </section>
