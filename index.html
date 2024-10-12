@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpotifyWebApp-Clone</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <script src="script.js"></script>
     <section class="container">
-        <section class="Sec-A">
-            <ul class="homeSec">
-                <div class="logo">
-                    <img src="Images/spotifyLogo.svg" alt="">
-                    <h1>Spotify</h1>
-                </div>
-                <li>
-                    <img src="Images/home.svg" alt="">
-                    <h4>Home</h4>
-                </li>
-                <li>
-                    <img src="Images/search.svg" alt="">
-                    <h4>Search</h4>
-                </li>
-            </ul>
+      <section class="Sec-A">
+        <ul class="homeSec">
+          <div class="logo">
+            <img src="Images/spotifyLogo.svg" alt="" />
+            <h1>Spotify</h1>
+          </div>
+          <li>
+            <img src="Images/home.svg" alt="" />
+            <h4>Home</h4>
+          </li>
+          <li>
+            <img src="Images/search.svg" alt="" />
+            <h4>Search</h4>
+          </li>
+        </ul>
 
-            <ul class="songList">
-                
-            </ul>
-        </section>
-        <section class="Sec-B">
-            <nav>
-                <div class="angles">
-                    <img src="Images/left.svg" alt="left">
-                    <img src="Images/right.svg" alt="right">
-                </div>
-                <div class="loginBtns">
-                    <button class="login">login</button>
-                    <button class="signUp">SignUp</button>
-                </div>
-            </nav>
+        <ul class="songList"></ul>
+      </section>
+      <section class="Sec-B">
+        <nav>
+          <div class="angles">
+            <img src="Images/left.svg" alt="left" />
+            <img src="Images/right.svg" alt="right" />
+          </div>
+          <div class="loginBtns">
+            <button class="login">login</button>
+            <button class="signUp">SignUp</button>
+          </div>
+        </nav>
 
-            <div class="cardSection">
-                <h1 id="playlist">Spotify Playlists</h1>
-                <div class="cardList">
-                    <div class="card">
-                        <img src="CardImages/Thumbnail.jpeg" width="200" height="200" alt="">
-                        <h1>Anil_kumar</h1>
-                        <h4>Anil_kumar hits</h4>
-                    </div>
-                    <div class="card">
-                        <img src="CardImages/Thumbnail.jpeg" width="200" height="200" alt="">
-                        <h1>Anil_kumar</h1>
-                        <h4>Anil_kumar hits</h4>
-                    </div>
-                    <div class="card">
-                        <img src="CardImages/Thumbnail.jpeg" width="200" height="200" alt="">
-                        <h1>Anil_kumar</h1>
-                        <h4>Anil_kumar hits</h4>
-                    </div>
+        <div class="cardSection">
+          <h1 id="playlist">Spotify Playlists</h1>
+          <div class="cardList">
+            
+            
+            
+          </div>
+        </div>
+
+        <div class="audioTrack invert">
+            <div class="songTrack invert">
+                <span class="songName invert"></span>
+                <div class="songBtns invert">
+                    <img
+                    class="previous"
+                    onclick="previousSong ()"
+                    src="Images/play-backwards.svg"
+                    alt=""
+                    />
+                    <img
+                    class="playSong"
+                    onclick="playPauseMusic ()"
+                    src="Images/play-button.svg"
+                    alt=""
+                    />
+                    <img
+                    class="next"
+                    onclick="playNextSong ()"
+                    src="Images/play-forwards.svg"
+                    alt=""
+                    />
                 </div>
+                <div class="time invert"></div>
             </div>
-            <div class="audioTrack">
-                    <span class="songName"></span>
-                    <div class="songBtns">
-                        <img class="previous" onclick="previousSong ()" src="Images/play-backwards.svg" alt="">
-                        <img class="playSong" onclick="playPauseMusic ()" src="Images/play-button.svg" alt="">
-                        <img class="next" onclick="playNextSong ()" src="Images/play-forwards.svg" alt="">
-                    </div>
-                    <div class="time">
-                    </div>
+            <div id="seekBar">
+
+                <div class="circle">
+
+                </div>
+
             </div>
-        </section>
+        </div>
+        
+      </section>
     </section>
-</body>
+  </body>
 </html>
