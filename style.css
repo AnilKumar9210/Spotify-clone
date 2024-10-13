@@ -278,3 +278,50 @@ card > h1 {
   align-items: center;
   width: 99%;
 }
+
+
+.footer {
+  display: flex;
+  font-size: 10px;
+  color: grey;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+
+}
+
+.footer a {
+  color: grey;
+}
+
+.last {
+  width: 97%;
+  /* position: absolute; */
+  height: 319px;
+  display: flex;
+  padding: 15px;
+  gap: 65px;
+}
+.flex {
+  display: flex;
+  flex-flow: column;
+  gap: 7px;
+}
+.object>a {
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  align-items: flex-start;
+}
+
+.socialMedia>div {
+  margin: 10px 10px;
+}
+
+.socialMedia > a {
+  margin: 3px;
+}
+

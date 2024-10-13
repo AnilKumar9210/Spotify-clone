@@ -130,7 +130,7 @@ async function displayAlbums () {
             let response = await a.json ();
             cardContainer.innerHTML = cardContainer.innerHTML + `<div class="card" data-folder="${folder}" onclick="loadSongs ()">
               <img
-                src="/songs/${folder}/cover.jpg"
+                src="/songs/${folder}/cover"
                 width="200"
                 height="200"
                 alt=""
