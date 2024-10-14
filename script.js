@@ -142,6 +142,7 @@ async function displayAlbums () {
     }
 
 }
+
 async function main () {
     await displayAlbums  ();
 }
