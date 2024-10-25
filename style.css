@@ -181,6 +181,7 @@ card > h1 {
 }
 
 .audioTrack {
+  z-index: 1;
   width: 67%;
   height: 70px;
   background-color: #dcd9d9;
