@@ -24,10 +24,11 @@ async function getSongs(folder) {
         songUL.innerHTML = songUL.innerHTML + `<li>
                     <img class="invert m-10" src="Images/music.svg" alt="">
                     <div class="name">
-                        ${song.replaceAll("%20", " ")}
+                        ${song.split("-")[1].trim ().replaceAll("%20"," ")}
                     </div>
                     <img class="invert m-10" src="Images/play-button.svg" alt="">
                 </li>`
+                console.log(song.split ("-")[0],song.split(" - ")[1])
     }
 
 
@@ -101,7 +102,7 @@ document.addEventListener ("DOMContentLoaded", function () {
     document.querySelector("#seekBar").addEventListener("click", e => {
         let percent = (e.offsetX / e.target.getBoundingClientRect().width) * 100;
         document.querySelector(".circle").style.left = percent + "%";
-        currentSong.currentTime = ((curSong.duration) * percent) / 100;
+        curSong.currentTime = ((curSong.duration) * percent) / 100;
     })
 })
 
@@ -130,7 +131,7 @@ async function displayAlbums () {
             let response = await a.json ();
             cardContainer.innerHTML = cardContainer.innerHTML + `<div class="card" data-folder="${folder}" onclick="loadSongs ()">
               <img
-                src="/songs/${folder}/cover.jpg"
+                src="songs/${folder}/cover.jpg"
                 width="200"
                 height="200"
                 alt=""
