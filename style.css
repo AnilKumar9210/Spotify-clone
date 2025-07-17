@@ -326,3 +326,7 @@ card > h1 {
   margin: 3px;
 }
 
+
+.song {
+  display: none;
+}

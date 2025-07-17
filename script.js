@@ -24,17 +24,18 @@ async function getSongs(folder) {
         songUL.innerHTML = songUL.innerHTML + `<li>
                     <img class="invert m-10" src="Images/music.svg" alt="">
                     <div class="name">
-                        ${song.split("-")[1].trim ().replaceAll("%20"," ")}
+                        ${song.replaceAll("%20"," ").trim().split("-")[1]}
                     </div>
+                    <div class="song"> ${song.replaceAll("%20"," ")}</div>
                     <img class="invert m-10" src="Images/play-button.svg" alt="">
                 </li>`
-                console.log(song.split ("-")[0],song.split(" - ")[1])
+                console.log(song.split ("-")[0],song.split("-")[1].trim ().replaceAll("%20"," "))
     }
 
 
     Array.from(document.querySelector(".songList").getElementsByTagName("li")).forEach(e => {
         e.addEventListener("click", (element) => {
-            playMusic(e.querySelector(".name").innerHTML.trim())
+            playMusic(e.querySelector(".song").innerHTML.trim())
         })
     })
 
@@ -75,7 +76,7 @@ function playMusic(track, pause = false) {
         document.querySelector(".playSong").src = "Images/pause.svg"
         isPause = false;
     }
-    document.querySelector(".songName").innerHTML = track;
+    document.querySelector(".songName").innerHTML = track.split("-")[1].trim ().replaceAll("%20"," ");
     document.querySelector(".time").textContent = "00:00/00:00";
 }
 
