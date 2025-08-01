@@ -416,7 +416,7 @@ body {
   }
 
   .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
+    width: 0%; 
     opacity: 0;
   }
 
@@ -467,7 +467,7 @@ body {
     gap: 16px;
   }
   .object {
-    margin: 0;
+    margin: 0 0 0 0;
   }
 
   .title {
