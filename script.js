@@ -133,16 +133,21 @@ async function displayAlbums () {
             cardContainer.innerHTML = cardContainer.innerHTML + `<div class="card" data-folder="${folder}" onclick="loadSongs ()">
               <img
                 src="songs/${folder}/cover.jpg"
-                width="200"
-                height="200"
                 alt=""
               />
-              <h1>${response.title}</h1>
-              <h4>${response.description}</h4>
+              <span class='title'>${response.title}</span>
+              <span class="desc">${response.description}</span>
             </div>`
         }
     }
 
+}
+
+function handleToggle () {
+    const secA = document.querySelector (".Sec-A");
+    secA.classList.toggle ('active')
+    const ham = document.querySelector (".burger");
+    ham.classList.toggle ('active')
 }
 async function main () {
     await displayAlbums  ();

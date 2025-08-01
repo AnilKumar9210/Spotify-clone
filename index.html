@@ -6,7 +6,7 @@
     <title>SpotifyWebApp-Clone</title>
     <link rel="stylesheet" href="style.css" />
     <title>Spotify-Web App</title>
-    <link rel="shortcut icon" href="Images/spotify.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Images/spotify.png" type="image/x-icon" />
   </head>
   <body>
     <script src="script.js"></script>
@@ -32,8 +32,15 @@
       <section class="Sec-B">
         <nav>
           <div class="angles">
-            <img src="Images/left.svg" alt="left" />
-            <img src="Images/right.svg" alt="right" />
+            <img src="Images/left.svg" alt="left" class="left" />
+            <img src="Images/right.svg" alt="right" class="right" />
+            <!-- From Uiverse.io by JaydipPrajapati1910 -->
+            <div class="burger" onclick="handleToggle ()">
+              <input id="burger" type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
           <div class="loginBtns">
             <button class="login">login</button>
@@ -43,48 +50,44 @@
 
         <div class="cardSection">
           <h1 id="playlist">Spotify Playlists</h1>
-          <div class="cardList">
-            
-            
-            
-          </div>
+          <div class="cardList"></div>
+        </div>
+
+        <div class="mob_song_list">
+          
         </div>
 
         <div class="audioTrack invert">
-            <div class="songTrack invert">
-                <span class="songName invert"></span>
-                <div class="songBtns invert">
-                    <img
-                    class="previous"
-                    onclick="previousSong ()"
-                    src="Images/play-backwards.svg"
-                    alt=""
-                    />
-                    <img
-                    class="playSong"
-                    onclick="playPauseMusic ()"
-                    src="Images/play-button.svg"
-                    alt=""
-                    />
-                    <img
-                    class="next"
-                    onclick="playNextSong ()"
-                    src="Images/play-forwards.svg"
-                    alt=""
-                    />
-                </div>
-                <div class="time invert"></div>
+          <div class="songTrack invert">
+            <span class="songName invert"></span>
+            <div class="songBtns invert">
+              <img
+                class="previous"
+                onclick="previousSong ()"
+                src="Images/play-backwards.svg"
+                alt=""
+              />
+              <img
+                class="playSong"
+                onclick="playPauseMusic ()"
+                src="Images/play-button.svg"
+                alt=""
+              />
+              <img
+                class="next"
+                onclick="playNextSong ()"
+                src="Images/play-forwards.svg"
+                alt=""
+              />
             </div>
-            <div id="seekBar">
-
-                <div class="circle">
-
-                </div>
-
-            </div>
+            <div class="time invert"></div>
+          </div>
+          <div id="seekBar">
+            <div class="circle"></div>
+          </div>
         </div>
         <footer class="last invert">
-          <div class="company flex m-10 object">
+          <div class="company flex object">
             <div>
               <h1 class="invert">Company</h1>
             </div>
@@ -92,7 +95,7 @@
             <a href=""><span>Jobs</span></a>
             <a href=""><span>For the record</span></a>
           </div>
-          <div class="community flex m-10 object">
+          <div class="community flex object">
             <div>
               <h1 class="invert">community</h1>
             </div>
@@ -101,17 +104,15 @@
             <a href=""><span>Investors</span></a>
             <a href=""><span>Advertising</span></a>
             <a href=""><span>Vendors</span></a>
-            
           </div>
-          <div class="usefulLinks flex m-10 object">
+          <div class="usefulLinks flex object">
             <div>
               <h1 class="invert">useful links</h1>
             </div>
             <a href=""><span>Support</span></a>
             <a href=""><span>Free mobile App</span></a>
-
           </div>
-          <div class="spotiyPlans flex m-10 object">
+          <div class="spotiyPlans flex object">
             <div>
               <h1 class="invert">spotify plans</h1>
             </div>
@@ -120,27 +121,47 @@
             <a href=""><span>Premimum Family</span></a>
             <a href=""><span>Premimum Student</span></a>
             <a href=""><span>Spotify Fee</span></a>
-            
           </div>
           <div class="socialMedia">
             <h1 class="invert">Social Media</h1>
             <div>
-              <a href=""><img src="Images/fb.svg" alt=""></a>
-              <a href=""><img src="Images/insta.svg" alt=""></a>
-              <a href=""><img src="Images/twitter.svg" alt=""></a>
+              <a href=""><img src="Images/fb.svg" alt="" /></a>
+              <a href=""><img src="Images/insta.svg" alt="" /></a>
+              <a href=""><img src="Images/twitter.svg" alt="" /></a>
             </div>
           </div>
         </footer>
       </section>
       <div class="footer">
-        <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
-        <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
-        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+        <div>
+          <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
         </div>
-        <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
-        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
-        <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
-    </div>
+        <div>
+          <a href="https://www.spotify.com/jp/privacy/"
+            ><span>Privacy Center</span></a
+          >
+        </div>
+        <div>
+          <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+            ><span>Privacy Policy</span></a
+          >
+        </div>
+        <div>
+          <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+            ><span>Cookies</span></a
+          >
+        </div>
+        <div>
+          <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+            ><span>About Ads</span></a
+          >
+        </div>
+        <div>
+          <a href="https://www.spotify.com/jp/accessibility/"
+            ><span>Accessibility</span></a
+          >
+        </div>
+      </div>
     </section>
   </body>
 </html>
